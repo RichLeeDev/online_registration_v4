@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: .75rem;
+}
+
+header {
+  background-color: navy;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+}
+
+.main-header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title,
+.title-info {
+  text-align: center;
+}
