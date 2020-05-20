@@ -1,41 +1,86 @@
 * {
-  box-sizing: border-box;
+  font-family: "Merriweather" , serif;
 }
-
-h1 {
-  font-size: 1.45rem;
-  font-weight: 600;
-  color: white;
-}
-
 h2 {
-  font-size: 1.25rem;
-}
-
-p {
-  font-size: .75rem;
+  font-size: 1.275rem;
 }
 
 header {
   background-color: navy;
+  color: white;
 }
 
 body {
   display: flex;
   flex-direction: column;
 }
+main {
+  padding: 0 10px;
+}
+input,
+label,
+select {
+  border-radius: .4em;
+}
+input,
+select {
+  line-height: 2.5;
+  border: none;
+  margin: 3px 0;
+}
+label {
+  padding-top: 5px;
+}
+textarea {
+  margin-bottom: 10px;
+}
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+label[for="format"],
+label[for="news"] {
+  font-size: 12px;
+}
+
 
 .container {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
 .main-header {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 15px 30px;
 }
 .title,
 .title-info {
   text-align: center;
+}
+.title {
+  color: #484848;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.title-info {
+  font-size: .875rem;
+  color: #adadad;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.top {
+  margin-top: 10px;
+}
+.btn {
+  cursor: pointer;
+  font-size: .975em;
+  font-weight: 450;
+  color: white;
+  padding: 10px 35px;
+  background-color: #52bab3;
+  border-radius: .5em;
 }
