@@ -118,6 +118,7 @@ div .checkbox input {
 @media (min-width: 768px) {
 main {
   max-width: 900px;
+  margin: 0 auto;
 }
 .input {
   flex-direction: row;
