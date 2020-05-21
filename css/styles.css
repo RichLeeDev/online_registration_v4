@@ -20,7 +20,7 @@ select {
 input,
 select {
   line-height: 2.5;
-  border: none;
+  border-style: groove;
   margin: 3px 0;
 }
 select {
@@ -46,6 +46,7 @@ label[class="top"] {
 }
 label[class="size"] {
   font-size: 14px;
+  margin-left: 5px;
 }
 input[type="email"]::placeholder,
 input[type="text"]::placeholder {
@@ -56,11 +57,18 @@ input:focus,
 textarea:focus {
   border-color: #192841;
 }
-
-
-.container {
+.container,
+.input {
   display: flex;
   flex-direction: column;
+}
+.checkbox {
+  display:flex;
+  flex-direction: row;
+}
+
+div .checkbox input {
+  margin-top: 15px;
 }
 
 .main-header {
@@ -110,21 +118,25 @@ textarea:focus {
 @media (min-width: 768px) {
 main {
   max-width: 900px;
-  margin: auto;
+}
+.input {
+  flex-direction: row;
+}
+.smaller label {
+  flex: 2;
+}
+.smaller input {
+  max-width: 200px;
+  height: 35px;
+}
+div .input input,
+div .input select {
+  flex: 2 200px;;
+}
+div .input label {
+  flex: 1;
 }
 .title {
   margin-top: 40px;
-}
-
-.main {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.main label,
-.main input {
-  flex-basis: 400px;
-}
-.main input {
-  flex: 2;
 }
 }
