@@ -21,8 +21,8 @@
     <p class="title-info">Get me the latest news on how your code is doing right in your inbox</p>
 
     <div>
-      <hr size="3" noshade color="black">
-      <hr size="3" noshade>
+      <hr>
+      <hr>
     </div>
 
     <div>
@@ -31,7 +31,7 @@
 
           <legend>Contact Information</legend>
 
-          <div class="container">
+          <div class="main container">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_name" placeholder="Required">
 
@@ -49,6 +49,7 @@
 
             <label for="state">State</label>
             <select id="state" name="user_state">
+              <option value="">Choose State</option>
               <option value="">AL</option>
               <option value="">AK</option>
               <option value="">AZ</option>
@@ -71,7 +72,7 @@
 
         </fieldset>
 
-        <hr size="1" noshade>
+        <hr>
 
         <fieldset>
 
@@ -79,32 +80,30 @@
 
           <div class="container">
 
-            <label class="top" for="news">Select the newsletters you would like to recieve</label>
-            <input type="radio" id="news" value="html" name="user_html">
-            <label for="news">HTML News</label>
-            <input type="radio" id="news" value="css" name="user_css">
-            <label for="news">CSS News</label>
-            <input type="radio" id="news" value="javascript" name="user_javascript">
-            <label for="news">Javascript News</label>
+            <label class="top" for="html">Select the newsletters you would like to recieve</label>
 
-          
-            <label for="format">Newsletter format</label><br>
-            <input type="radio" id="format" value="html_format" name="HTML">
-            <label for="format">HTML format</label>
-            <input type="radio" id="format" value="plain_format" name="plain">
-            <label for="format">Plain text</label>
+            <label class="size" ><input type="radio" id="html" value="news" name="user_html">HTML News</label>
+
+            <label class="size" ><input type="radio" id="css" value="news" name="user_css">CSS News</label>
+
+            <label class="size" ><input type="radio" id="javascript" value="news" name="user_javascript">Javascript News</label>
+
+
+            <label class="top" for="html_format">Newsletter format</label>
+
+            <label class="size" ><input type="radio" id="html_format" value="format" name="HTML">HTML format</label>
+
+            <label class="size" ><input type="radio" id="plain_format" value="format" name="plain">Plain text</label>
 
             <label class="top" for="more_info">Other topics you'd like to hear about</label>
             <textarea id="more_info" name="user_info"></textarea>
+            <button class="btn" type="submit">Sign Up</button>
+            <p class="copyright"><em>Copyright The Code Review</em></p>
 
           </div>
         </fieldset>
-
-        <button class="btn" type="submit">Sign Up</button>
       </form>
     </div>
-
-    <footer>
 
   </main>
 
